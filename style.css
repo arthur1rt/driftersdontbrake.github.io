@@ -12,14 +12,27 @@ body{
 }
 
 #steamLink{
+    top: 10%;
+    width: 125%;
 }
 
 #youtubeLink{
-    margin-top: 15%;
-    margin-bottom: 15px;
+    top: 5%;
+    left: 11.25%;
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 6px;
-    width: 20% 
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    border-right-width: 0.4em;
+    border-left-width: 0.4em;
+    border-style: solid;
+    
+}
+
+#video {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: -10%;
 }
 
 #background{
