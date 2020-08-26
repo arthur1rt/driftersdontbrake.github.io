@@ -1,6 +1,8 @@
 body{
     background-color: rgb(224, 75, 75) !important;
     text-align: center;
+    background-image: url("./images/background.png");
+    background-repeat: repeat;
 }
 
 #logo{
@@ -8,46 +10,44 @@ body{
     left: 20px;
     bottom: 20px;
     width: 20%;
+    min-width: 200px;
     height: auto;
 }
 
-#steamLink{
-    top: 10%;
-    width: 125%;
-}
 
-#youtubeLink{
-    top: 5%;
-    left: 11.25%;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    border-right-width: 0.4em;
-    border-left-width: 0.4em;
-    border-style: solid;
-    
-}
-
-#video {
+.auto-resizable-iframe {
+    max-width: 600px;
+    margin: 0px auto;
+  }
+  
+.auto-resizable-iframe > div {
     position: relative;
-    padding-bottom: 56.25%;
-    margin-bottom: -10%;
+    padding-bottom: 55%;
+    height: 0px;
 }
-
-#background{
-    position: fixed;
-
-    background-image: url("./images/background.png");
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    width: 52%;
+  
+.auto-resizable-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 100%;
     height: 100%;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-    bottom: 0;
-    top: 0;
-    left: 24%;
 }
 
+.menuBg{
+    position: absolute;
+    background-image: url("./images/menubg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 25%;
+}
